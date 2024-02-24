@@ -8,7 +8,7 @@ def main():
         # Perform actions when the submit button is clicked
         pass
 
-    st.title("Welcome To Hotel Reservation Prediction ")
+    st.title(" Hotel Reservation Prediction Analysis ")
 
     with open('style.css') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
