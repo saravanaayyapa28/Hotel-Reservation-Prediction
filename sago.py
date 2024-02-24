@@ -13,7 +13,7 @@ def main():
     with open('style.css') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-    #st.image("images(3).jpg", use_column_width=True)  
+    st.image("images(3).jpg", use_column_width=True)  
     
     option1 = st.sidebar.selectbox('Select The Country ', ['India', 'USA', 'Singapore'])
     option2 = st.sidebar.selectbox('Select The city', ['Delhi','Mumbai','Bangalore',"Kerala",'Kolkata','Chennai','Hyderabad','Pune','Ahmedabad','Jaipur','Surat','Lucknow','Kanpur','Nagpur','Indore','Thane','Bhopal','Visakhapatnam','Pimpri-Chinchwad','Patna','Vadodara'])
