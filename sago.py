@@ -2,7 +2,7 @@ import streamlit as st
 
 def main():
     search_query = st.text_input('Search Famous Places')
-    search_submit = st.button('Sagoooo')
+    search_submit = st.button('Search')
 
     if search_submit:
         # Perform actions when the submit button is clicked
