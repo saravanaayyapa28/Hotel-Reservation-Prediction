@@ -18,6 +18,7 @@ def main():
     option1 = st.sidebar.selectbox('Select The Country ', ['India', 'USA', 'Singapore'])
     option2 = st.sidebar.selectbox('Select The city', ['Delhi','Mumbai','Bangalore',"Kerala",'Kolkata','Chennai','Hyderabad','Pune','Ahmedabad','Jaipur','Surat','Lucknow','Kanpur','Nagpur','Indore','Thane','Bhopal','Visakhapatnam','Pimpri-Chinchwad','Patna','Vadodara'])
     option6 = st.sidebar.selectbox('Select The Mode ', ['Online', 'Offline'])
+    option9 = st.sidebar.selectbox('Select The Mode ', ['Previous Booking ', 'Fresh Booking'])
     option7 = st.sidebar.selectbox('Select The District', ['Alleppey','Goa','Gokarna','Ooty','Sikkim','Amritsar','Leh','Rameshwaram','Munnar'])
     
     if search_query:
@@ -26,6 +27,7 @@ def main():
 
     st.sidebar.subheader("Additional Options")
     option3 = st.sidebar.checkbox('Include Breakfast')
+    option8 = st.sidebar.checkbox('Include Car Parking')
     option4 = st.sidebar.slider('Number of Nights', min_value=1, max_value=30, step=1, value=5)
     option5 = st.sidebar.selectbox('Select Year', list(range(2020, 2030)), index=5)
 
@@ -54,6 +56,11 @@ def main():
             st.write("Breakfast included.")
         else:
             st.write("Breakfast not included.")
+            
+        if option8:
+            st.write("Breakfast Car Parking.")
+        else:
+            st.write("Breakfast not Car Parking.")
 
         st.write(f"Number of nights: {option4}.")
 
