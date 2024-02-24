@@ -13,7 +13,7 @@ def main():
     with open('style.css') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-    st.image("image(2).jpg", use_column_width=True)# Replace "images (1).jpg" with the path to your image file
+    st.image("image(3).jpg", use_column_width=True)  
     
     option1 = st.sidebar.selectbox('Select The Country ', ['India', 'USA', 'Singapore'])
     option2 = st.sidebar.selectbox('Select The city', ['Delhi','Mumbai','Bangalore',"Kerala",'Kolkata','Chennai','Hyderabad','Pune','Ahmedabad','Jaipur','Surat','Lucknow','Kanpur','Nagpur','Indore','Thane','Bhopal','Visakhapatnam','Pimpri-Chinchwad','Patna','Vadodara'])
@@ -34,7 +34,7 @@ def main():
     if submit_button:
         # Additional logic for option1
         if option1 == 'India':
-            st.write("You selected  Country India.")
+            st.write("You selected Country India.")
         elif option1 == 'USA':
             st.write("You selected USA.")
         elif option1 == 'Singapore':
@@ -47,7 +47,7 @@ def main():
         st.write (f"You selected Mode {option6}.")
 
         # Additional logic for option2
-        st.write(f"You selected  District {option7}.")
+        st.write(f"You selected District {option7}.")
 
         # Additional logic for option3 and option4
         if option3:
