@@ -14,7 +14,7 @@ def main():
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
     # Add image
-    st.image("computer-science.jpg", use_column_width=True)# Replace "images (1).jpg" with the path to your image file
+    st.image("image(2).jpg", use_column_width=True)# Replace "images (1).jpg" with the path to your image file
     
     option1 = st.sidebar.selectbox('Select The Country ', ['India', 'USA', 'Singapore'])
     option2 = st.sidebar.selectbox('Select The city', ['Delhi','Mumbai','Bangalore',"Kerala",'Kolkata','Chennai','Hyderabad','Pune','Ahmedabad','Jaipur','Surat','Lucknow','Kanpur','Nagpur','Indore','Thane','Bhopal','Visakhapatnam','Pimpri-Chinchwad','Patna','Vadodara'])
